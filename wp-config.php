@@ -21,19 +21,19 @@
 
     if (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
         /** The name of the Cloud SQL database for WordPress */
-        define('DB_NAME', 'wordpress_db');
+        define('DB_NAME', 'gameusher');
         /** Live environment Cloud SQL login and SITE_URL info */
         /** Note that from App Engine, the password is not required, so leave it blank here */
-        define('DB_HOST', ':/cloudsql/your-project-id:wordpress');
+        define('DB_HOST', ':/cloudsql/gameusher-com:us-central:gameusher-sqldb01');
         define('DB_USER', 'root');
         define('DB_PASSWORD', '');
     } else {
         /** The name of the local database for WordPress */
-        define('DB_NAME', 'wordpress_db');
+        define('DB_NAME', 'gameusher-com');
         /** Local environment MySQL login info */
         define('DB_HOST', '127.0.0.1');
         define('DB_USER', 'root');
-        define('DB_PASSWORD', 'password');
+        define('DB_PASSWORD', 'kakaloka');
     }
 
     // Determine HTTP or HTTPS, then set WP_SITEURL and WP_HOME
@@ -61,14 +61,14 @@
      *
      * @since 2.6.0
      */
-    define('AUTH_KEY',         'put your unique phrase here');
-    define('SECURE_AUTH_KEY',  'put your unique phrase here');
-    define('LOGGED_IN_KEY',    'put your unique phrase here');
-    define('NONCE_KEY',        'put your unique phrase here');
-    define('AUTH_SALT',        'put your unique phrase here');
-    define('SECURE_AUTH_SALT', 'put your unique phrase here');
-    define('LOGGED_IN_SALT',   'put your unique phrase here');
-    define('NONCE_SALT',       'put your unique phrase here');
+    define('AUTH_KEY',         '}# 0Ty~2a+,|8~>8[kq_:mO/Y*9N-5+PtWoY@Nm*&Amhmx|^26S?}R+8byH7[JAd');
+    define('SECURE_AUTH_KEY',  'Q09(EJh!OC_H6I__s?wG65}Osp2V%L[0OPepQ:t+A-gbl8h.kakK$k0hSev+[|6J');
+    define('LOGGED_IN_KEY',    'VM %>q._2XZ7+FX&D/+*INZF-DVs+;01f^Z!o|[wKKSY]NWS0/*_9 |XM-):L)J0');
+    define('NONCE_KEY',        '^=T7upx<DNlQ(+][&fX`j(_$I+FE<_X|[A&aQ<]|#pcVvH7*yLrekC:F#PtrF_&W');
+    define('AUTH_SALT',        '-;o-hNk`&bf<6Muj^/)5x(-o||<EKj~/X!X3CL(WI&+MG$??&Fn6HE-ytDV>wkYK');
+    define('SECURE_AUTH_SALT', '#mw*i;*2@ln3alOr0Inz&&e+]kEn3xx:UF`|!-V=|<4WDi1wb;os^*{mK-8IUg$5');
+    define('LOGGED_IN_SALT',   '|Ynk$fc3ELQ@Hcysz~C$v/7YQh{dL*!+.cs9FH|f&ZC@j-&&X2wHoB^>C~H$$|1)');
+    define('NONCE_SALT',       'e-BF%Lst]3.bE#UFsa`ijypTu!L 2IfP~S Pw|umK/ycMW  ekRnYXe#kOi-uZ[x');    
 
     /**#@-*/
 
